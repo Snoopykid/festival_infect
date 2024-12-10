@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>축제 정보 입력</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>축제 정보 입력</h1>
+        <form id="festivalForm">
+            <!-- 나이 입력 -->
+            <label for="age">나이:</label>
+            <input type="number" id="age" name="age" placeholder="나이를 입력하세요" required>
+
+            <!-- 성별 선택 -->
+            <label for="gender">성별:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>성별을 선택하세요</option>
+                <option value="남성">남성</option>
+                <option value="여성">여성</option>
+            </select>
+
+            <!-- 날짜 선택 (연도와 월까지만 가능) -->
+            <label for="date">날짜:</label>
+            <input type="month" id="date" name="date" required>
+
+            <!-- 축제 유형 선택 -->
+            <label for="festivalType">축제 유형:</label>
+            <select id="festivalType" name="festivalType" required>
+                <option value="" disabled selected>축제 유형을 선택하세요</option>
+                <option value="문화예술">문화예술</option>
+                <option value="생태환경">생태환경</option>
+                <option value="특산물">특산물</option>
+                <option value="주민화합">주민화합</option>
+                <option value="생태자연">생태자연</option>
+                <option value="전통문화">전통문화</option>
+                <option value="평생학습축제">평생학습축제</option>
+                <option value="해넘이">해넘이</option>
+                <option value="IFEZ 20주년 기념">IFEZ 20주년 기념</option>
+                <option value="민군화합">민군화합</option>
+                <option value="전통역사">전통역사</option>
+                <option value="관광">관광</option>
+                <option value="반려동물">반려동물</option>
+                <option value="문화관광">문화관광</option>
+                <option value="체험, 전시">체험, 전시</option>
+                <option value="체육">체육</option>
+                <option value="시민화합">시민화합</option>
+                <option value="관광자원">관광자원</option>
+                <option value="산업육성">산업육성</option>
+                <option value="해양스포츠">해양스포츠</option>
+                <option value="문화예술, 주민화합">문화예술, 주민화합</option>
+                <option value="반려 문화 축제">반려 문화 축제</option>
+            </select>
+
+            <!-- 제출 버튼 -->
+            <button type="submit">제출</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
